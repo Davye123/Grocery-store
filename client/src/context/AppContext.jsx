@@ -7,9 +7,10 @@ export const  AppContextProvider =({children})=>{
     const navigate =useNavigate();
     const[user,setUser]=useState(null);
     const[isSeller,setisSeller]=useState(false)
+    const[showUserLogin,setShowUserLogin]=useState(false)
 
 
-    const value ={navigate,user,setUser,isSeller,setisSeller}
+    const value ={navigate,user,setUser,isSeller,setisSeller,showUserLogin,setShowUserLogin}
 
     return <AppContext.Provider value={value}>
         {children}
